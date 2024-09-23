@@ -1,0 +1,51 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Hide (Worldwide) Sponsored Posts",
+    "version": "1.0",
+    "description": "Hides sponsored posts on Amazon in multiple languages",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "host_permissions": [
+      "*://*.amazon.com/*",
+      "*://*.amazon.co.uk/*",
+      "*://*.amazon.de/*",
+      "*://*.amazon.fr/*",
+      "*://*.amazon.it/*",
+      "*://*.amazon.es/*",
+      "*://*.amazon.co.jp/*",
+      "*://*.amazon.ca/*",
+      "*://*.amazon.com.au/*",
+      "*://*.amazon.com.br/*",
+      "*://*.amazon.nl/*",
+      "*://*.amazon.in/*",
+      "*://*.amazon.com.mx/*",
+      "*://*.amazon.cn/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.amazon.com/*",
+          "*://*.amazon.co.uk/*",
+          "*://*.amazon.de/*",
+          "*://*.amazon.fr/*",
+          "*://*.amazon.it/*",
+          "*://*.amazon.es/*",
+          "*://*.amazon.co.jp/*",
+          "*://*.amazon.ca/*",
+          "*://*.amazon.com.au/*",
+          "*://*.amazon.com.br/*",
+          "*://*.amazon.nl/*",
+          "*://*.amazon.in/*",
+          "*://*.amazon.com.mx/*",
+          "*://*.amazon.cn/*"
+        ],
+        "js": ["content.js"]
+      }
+    ]
+  }
